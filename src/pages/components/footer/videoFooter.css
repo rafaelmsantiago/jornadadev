@@ -10,24 +10,23 @@
 .videoFooter__text h3 {
     padding-bottom: 20px;
 }
+
 .videoFooter__text p {
     padding-bottom: 20px;
 }
 
-.videoFooter__music{
+.videoFooter__music {
     display: flex;
 }
 
-.videoFooter__icon{
-
-}
+.videoFooter__icon {}
 
 .videoFooterMusic__text {
     width: 80%;
     overflow-x: hidden;
 }
 
-.videoFooterMusic__text p{
+.videoFooterMusic__text p {
     animation: moveTheText 4s infinite linear;
 }
 
@@ -41,20 +40,33 @@
 }
 
 @keyframes spinTheRecord {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes moveTheText {
-    0%{
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
+
+
+@media only screen and (max-width: 440px) {
+    .videoFooter {
+        bottom: 22%;
+    }
+
+    .videoFooterMusic__text {
+        width: 75%;
+    }
+}
